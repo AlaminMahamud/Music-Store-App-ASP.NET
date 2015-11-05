@@ -48,8 +48,6 @@ these are responsible for processing input
 - Browser Page
 - Details Page
   
-  /// GET
-  /// /Store/Browse?genre=Disco
 <code>
     public string Browse(string genre)
     {
