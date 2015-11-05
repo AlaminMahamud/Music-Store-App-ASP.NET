@@ -50,7 +50,7 @@ these are responsible for processing input
   
   /// GET
   /// /Store/Browse?genre=Disco
-
+<code>
     public string Browse(string genre)
     {
       string message = HttpUtility.HtmlEncode("store.Browse,Genre="+genre);
@@ -62,4 +62,4 @@ these are responsible for processing input
       string message = "store.Details.Id="+id;
       return message;
     }
-
+</code>
