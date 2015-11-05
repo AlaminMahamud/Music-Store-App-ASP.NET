@@ -48,7 +48,7 @@ these are responsible for processing input
 - Browser Page
 - Details Page
   
-<code>
+<pre>
     public string Browse(string genre)
     {
       string message = HttpUtility.HtmlEncode("store.Browse,Genre="+genre);
@@ -60,4 +60,4 @@ these are responsible for processing input
       string message = "store.Details.Id="+id;
       return message;
     }
-</code>
+</pre>
