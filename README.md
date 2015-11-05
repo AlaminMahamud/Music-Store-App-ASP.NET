@@ -48,7 +48,7 @@ these are responsible for processing input
 - Browser Page
 - Details Page
   
-<pre>
+```cs
     public string Browse(string genre)
     {
       string message = HttpUtility.HtmlEncode("store.Browse,Genre="+genre);
@@ -60,4 +60,38 @@ these are responsible for processing input
       string message = "store.Details.Id="+id;
       return message;
     }
-</pre>
+```
+
+### Views
+
+VIEWS <br/>
+|____ HOME <br/>
+|_________Index.cshtml<br/>
+
+```cs
+@
+{
+  ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+```
+
+#### Using A Layout for Common Site Elements
+
+VIEWS <br/>
+|____ Shared<br/>
+|_______ _Layout.cshtml<br/>
+
+```asp 
+  <!DOCTYPE html>
+  <html>
+  <head>  
+    <meta charset = "UTF-8"/>
+    <title>@ViewBag.Title</title>
+    <link href = "@Url.Content("~/Content/Site.css")" rel = "stylesheet" type="text/css"/>
+  </head>
+  <body>
+    @RenderBody()
+  </body>
+  </html>
+```
