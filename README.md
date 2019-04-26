@@ -1,4 +1,4 @@
-# Music-Store-App-ASP.NET MVC
+# Music Store
 
 SIMPLE MUSIC STORE<br/>
 |____SHOPPING<br/>
